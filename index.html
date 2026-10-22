@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
     <title>Git | Tutorial</title>
 </head>
 <body>
@@ -12,6 +13,11 @@
             <p class="etiqueta">Tutorial: Git</p>
 
             <h1>Git: Software Para Versionamento</h1>
+
+            <img 
+                src="./imgs/git-logo.webp" 
+                alt="Logo Git"
+            >
 
             <p class="subtitulo">
                 Esta página é um tutorial sobre o software de versionamento Git.
@@ -25,6 +31,87 @@
             </nav>
         </div>
     </header>
+
+    <main class="conteudo">
+        <section class="secao">
+            <div class="container">
+                <h2 href="titulo-secao">Tutorial de como versionar em Git...</h2>
+                <div class="grade-cards">
+                    <article class="card">
+                        <h3>Iniciar um repositório: </h3>
+                        <p>
+                            Para iniciar um repositório Git é preciso acessar o software do Git
+                            pelo diretório onde você quer trabalhar no projeto e executá-lo com
+                            o comando 'git init'. 
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Verificar as modificações: </h3>
+                        <p>
+                            Depois de ter iniciado o repositório vamos conferir as alterações a 
+                            serem "commitadas", para que isso seja possível precisamos executar
+                            o comando 'git status'.
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Preparar para o commit: </h3>
+                        <p>
+                            Depois de verificarmos os status das modificações, precisamos preparar
+                            elas para o commit, para que isto seja possível é preciso executar o 
+                            comando 'git commit -m "Descrição das alterações"'.
+                            <br>
+                                <cite>OBS: É aconselhável usar o '-m' na frente do commit para
+                                    infomarmos as alterações feitas no projeto.
+                                </cite>  
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Conectar ao repositório: </h3>
+                        <p>
+                            Posterior ao commit, precisamos conectar aquele commit no Git
+                            ao repositório GitHub utilizando o comando 'git remote add
+                            origin linkRepositorio/github.com'.
+                            <br>
+                                <cite>
+                                    OBS: Podemos verificar se o repositório Git Hub está vinculado
+                                    utilizando o comando 'git remote -v' - O '-v' faz referência a
+                                    "view" de visualização.
+                                </cite>
+                        </p>
+                    </article>
+                    <article class="card">
+                        <h3>Empurrar para o repositório: </h3>
+                        <p>
+                            Por fim podemos colocar, finalmente, as alterações ao repositório
+                            do GitHub executando 'git push origin main' - 'main' faz referência
+                            a identificação do repositório -.
+                       
+                        <br>
+                            <cite>
+                                OBS: Quando estiver trabalhando em equipe utilize o 'git pull ...' no
+                                lugar de 'git push ...' para que as alterações sejam levadas ao servidor 
+                                permitindo que os outros usuários participantes visualizem. 
+                            </cite>
+                         </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="secao-fluxo">
+            <div class="container">
+                <h2 class="titulo-secao">Fluxo de comandos...</h2>
+                <ul>
+                    <li>git init</li>
+                    <li>git status</li>
+                    <li>git add</li>
+                    <li>git remote add origin</li>
+                    <li>git push origin main</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <hr>
 
     <footer class="rodape">
         <div class="container">

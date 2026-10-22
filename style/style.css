@@ -1,0 +1,30 @@
+*{
+    /* text-align: center; */
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orangered;
+    color: black;
+}
+
+h1{
+    margin-bottom: 10px;
+}
+
+
+.cabecalho{
+    background-color: black;
+    color: beige;
+    padding: 30px 0;
+}
+
+.container{
+    width: 90%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
